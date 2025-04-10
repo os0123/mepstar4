@@ -1,0 +1,34 @@
+.navbar-brand img {
+    height: 40px;
+    margin-right: 10px;
+  }
+
+  .nav-link {
+    font-weight: 500;
+    color: white !important;
+  }
+
+  .nav-link:hover {
+    color: white !important;
+  }
+ /* 007bff */
+ .navbar-logo {
+    height: 50px;
+    margin-right: 10px;
+  }
+  .navbar-custom {
+    background-color: #121212;
+    padding: 0.75rem 1.5rem;
+  }
+  
+  .navbar-custom .nav-link {
+    color: white !important;
+    font-weight: 500;
+    margin-left: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-custom .nav-link:hover {
+    color: #00bfff !important; /* Optional: Add hover effect */
+  }
+ 

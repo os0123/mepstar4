@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Mep Star</title>
+  <link rel="icon" type="image/png" href="./logo.PNG"> 
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-yCvl5nDovj6XrGgPvIbqumP6p1Zp7sIutcbnD6MqHvKk97k9OZ1Ed+BvQ5d2ejh7ewolivq/kJIz0jAeJYkB+w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+  <style>
+    .navbar-custom {
+      background-color: #0c2e4d;
+    }
+
+    .navbar-custom .navbar-brand,
+    .navbar-custom .nav-link {
+      color: #b4aeb4;
+    }
+
+    .navbar-custom .nav-link:hover {
+      color: white;
+    }
+
+    .navbar-logo {
+      height: 40px;
+      margin-right: 10px;
+    }
+
+    .navbar-brand-text {
+      font-size: 24px;
+      font-weight: bold;
+      color: #b4aeb4;
+    }
+
+    /* Custom hamburger icon */
+    .navbar-toggler {
+      border: none;
+    }
+
+    .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23b4aeb4' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    }
+    .carousel-item img {
+    height: 450px; /* or any fixed height you want */
+    object-fit: cover;
+    width: 100%;
+  }
+  .about-img {
+      max-width: 100%;
+      height: auto;
+    }
+    .lottie-container {
+      width: 100%;
+      max-width: 500px;
+      margin: auto;
+    }
+
+    @media (max-width: 768px) {
+      .about-text {
+        text-align: center;
+      }
+    }
+
+    .service-icon {
+    transition: transform 0.3s ease, color 0.3s ease;
+    display: inline-block;
+  }
+
+  .service-icon:hover {
+    transform: scale(1.3);
+    color: #007bff;
+  }
+  .service-box {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.service-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-custom" style="background-color: #121212;" >
+  <div class="container-fluid">
+    <a class="navbar-brand d-flex align-items-center text-white" href="./intro.html">
+        <img src="./darkllogo1.png" alt="Logo" class="navbar-logo me-2" style="height: 45px;">
+        <span class="navbar-brand-text"></span>
+      </a>
+      
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#services">Services</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+
+          
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" id="home">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./hero.png" class="d-block w-100" alt="hero1">
+      </div>
+      <div class="carousel-item">
+        <img src="./logo2.png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./hero1.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- ABOUT US SECTION -->
+
+  <section class="about-section py-5" style="background-color: #121212;" id="about">
+    <div class="container">
+      <div class="row align-items-center">
+        
+        <!-- LEFT SIDE: Lottie + Image -->
+        <div class="col-md-6 text-center" data-aos="fade-right">
+          <!-- Lottie Animation -->
+          <div class="mb-4">
+            <lottie-player 
+              src="https://assets1.lottiefiles.com/packages/lf20_puciaact.json"  
+              background="transparent"  
+              speed="1"  
+              loop autoplay style="width: 100%; max-width: 400px;">
+            </lottie-player>
+          </div>
+          
+          <!-- Static Image -->
+          <img src="./main.png" alt="About Us" class="img-fluid rounded shadow" style="max-height: 300px; object-fit: cover;">
+        </div>
+  
+        <!-- RIGHT SIDE: About Text -->
+        <div class="col-md-6 about-text" data-aos="fade-left">
+          <h2 class="fw-bold mb-3" style="color: white;">About Us</h2>
+          <p style="color: white;">
+            We are an electro–mechanical service and solutions provider offering end-to-end support for HVAC, Electrical, PHE, and Fire Fighting systems.
+          </p>
+          <p style="color: white;">
+            Our team is committed to delivering innovative, efficient, and sustainable engineering services that meet global standards.
+          </p>
+          <p style="color: white;">
+            At <strong>MEP Star</strong>, we blend technology with craftsmanship, ensuring your projects are executed flawlessly — on time and within budget.
+          </p>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+  <!-- Services section -->
+  <section class="py-5" style="background-color: #121212;" id="services">
+    <div class="container">
+      <h2 class="fw-bold text-center mb-5" style="color: white;">Our Services</h2>
+      <div class="row g-4">
+  
+        <!-- Service Box -->
+        <div class="col-md-3 col-sm-6 text-center">
+            <div class="p-4 bg-white shadow rounded service-box">
+                <a href="hvac.html" class="service-icon" target="_blank"><i class="fas fa-snowflake fa-2x text-primary mb-3"></i></a>
+            <h5 class="fw-bold mt-3">HVAC</h5>
+          </div>
+        </div>
+  
+        <div class="col-md-3 col-sm-6 text-center">
+            <div class="p-4 bg-white shadow rounded service-box">
+                <a href="phe.html" class="service-icon" target="_blank"><i class="fas fa-faucet fa-2x text-info mb-3"></i></a>
+            <h5 class="fw-bold mt-3">PHE</h5>
+          </div>
+        </div>
+  
+        <div class="col-md-3 col-sm-6 text-center">
+            <div class="p-4 bg-white shadow rounded service-box">
+                <a href="ff.html" class="service-icon" target="_blank"><i class="fas fa-fire fa-2x text-danger mb-3"></i></a>
+            <h5 class="fw-bold mt-3">Fire Fighting</h5>
+          </div>
+        </div>
+  
+        <div class="col-md-3 col-sm-6 text-center">
+            <div class="p-4 bg-white shadow rounded service-box">
+                <a href="electrical.html" class="service-icon" target="_blank"><i class="fas fa-bolt fa-2x text-warning mb-3"></i></a>
+            <h5 class="fw-bold mt-3">Electrical</h5>
+          </div>
+        </div>
+  
+        <!-- New Services -->
+        <div class="col-md-3 col-sm-6 text-center">
+            <div class="p-4 bg-white shadow rounded service-box">
+                <a href="amc.html" class="service-icon" target="_blank"><i class="fas fa-tools fa-2x text-secondary mb-3"></i></a>
+            <h5 class="fw-bold mt-3">AMC</h5>
+          </div>
+        </div>
+  
+        
+  
+        <div class="col-md-3 col-sm-6 text-center">
+            <div class="p-4 bg-white shadow rounded service-box">
+                <a href="tc.html" class="service-icon" target="_blank"><i class="fas fa-vials fa-2x text-danger mb-3"></i></a>
+            <h5 class="fw-bold mt-3">Testing & Commissioning</h5>
+          </div>
+        </div>
+  
+        <div class="col-md-3 col-sm-6 text-center">
+            <div class="p-4 bg-white shadow rounded service-box">
+                <a href="ab.html" class="service-icon" target="_blank"><i class="fas fa-drafting-compass fa-2x text-primary mb-3"></i></a>
+            <h5 class="fw-bold mt-3">AutoCAD & BIM</h5>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+  
+<!-- Projects -->
+  <section class="py-5" style="background-color: #121212;" id="projects">
+    <div class="container">
+    <h2 class="fw-bold text-center mb-4" style="color: #eaedf0;">List of Projects Executed</h2>
+    <p class="text-center mb-5" style="color: #f5f6f7;">
+      We have listed below some of our prestigious projects.
+    </p>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+
+      <!-- Project Items with AOS animation -->
+      <div class="col" data-aos="fade-up" data-aos-delay="100">
+        <div class="bg-white shadow-sm rounded p-3 h-100">
+          <i class="fas fa-building text-primary me-2"></i> Global Hospital - Mumbai
+        </div>
+      </div>
+
+      <div class="col" data-aos="fade-up" data-aos-delay="200">
+        <div class="bg-white shadow-sm rounded p-3 h-100">
+          <i class="fas fa-hotel text-success me-2"></i> Taj Hotel Colaba – Mumbai
+        </div>
+      </div>
+
+      <div class="col" data-aos="fade-up" data-aos-delay="300">
+        <div class="bg-white shadow-sm rounded p-3 h-100">
+          <i class="fas fa-hotel text-success me-2"></i> Taj Lands’ End - Mumbai
+        </div>
+      </div>
+
+      <div class="col" data-aos="fade-up" data-aos-delay="400">
+        <div class="bg-white shadow-sm rounded p-3 h-100">
+          <i class="fas fa-industry text-danger me-2"></i> Owens Corning - Taloja
+        </div>
+      </div>
+
+      <div class="col" data-aos="fade-up" data-aos-delay="500">
+        <div class="bg-white shadow-sm rounded p-3 h-100">
+          <i class="fas fa-industry text-danger me-2"></i> Sterlite - Aurangabad
+        </div>
+      </div>
+
+      <div class="col" data-aos="fade-up" data-aos-delay="600">
+        <div class="bg-white shadow-sm rounded p-3 h-100">
+          <i class="fas fa-leaf text-success me-2"></i> Syngenta – Goa
+        </div>
+      </div>
+
+      <div class="col" data-aos="fade-up" data-aos-delay="700">
+        <div class="bg-white shadow-sm rounded p-3 h-100">
+          <i class="fas fa-store text-warning me-2"></i> Makers Market City
+        </div>
+      </div>
+
+      <div class="col" data-aos="fade-up" data-aos-delay="800">
+        <div class="bg-white shadow-sm rounded p-3 h-100">
+          <i class="fas fa-laptop text-info me-2"></i> HP Shop – 4 Nos in Mumbai
+        </div>
+      </div>
+
+      <div class="col" data-aos="fade-up" data-aos-delay="900">
+        <div class="bg-white shadow-sm rounded p-3 h-100">
+          <i class="fas fa-city text-primary me-2"></i> NESCO IT Park Mumbai
+        </div>
+      </div>
+
+      <div class="col" data-aos="fade-up" data-aos-delay="1000">
+        <div class="bg-white shadow-sm rounded p-3 h-100">
+          <i class="fas fa-flask text-danger me-2"></i> Himedia Ambernath Mumbai
+        </div>
+      </div>
+
+      <div class="col" data-aos="fade-up" data-aos-delay="1100">
+        <div class="bg-white shadow-sm rounded p-3 h-100">
+          <i class="fas fa-flask text-danger me-2"></i> Himedia Nashik
+        </div>
+      </div>
+
+      <div class="col" data-aos="fade-up" data-aos-delay="1200">
+        <div class="bg-white shadow-sm rounded p-3 h-100">
+          <i class="fas fa-university text-info me-2"></i> Haffkine Parel
+        </div>
+      </div>
+
+      <div class="col" data-aos="fade-up" data-aos-delay="1300">
+        <div class="bg-white shadow-sm rounded p-3 h-100">
+          <i class="fas fa-pills text-secondary me-2"></i> Abbott Pharma
+        </div>
+      </div>
+
+      <div class="col" data-aos="fade-up" data-aos-delay="1400">
+        <div class="bg-white shadow-sm rounded p-3 h-100">
+          <i class="fas fa-pills text-secondary me-2"></i> Alkem Daman
+        </div>
+      </div>
+
+      <div class="col" data-aos="fade-up" data-aos-delay="1500">
+        <div class="bg-white shadow-sm rounded p-3 h-100">
+          <i class="fas fa-pills text-secondary me-2"></i> Alkem Indore
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Add AOS Library -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true
+  });
+</script>
+  <!-- Contacts -->
+  <section class="py-5" style="background-color: #121212;" id="contact">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-4" style="color: white;">Contact Us</h2>
+      <div class="row justify-content-center">
+  
+        <div class="col-md-6">
+          <div class="bg-white shadow p-4 rounded">
+  
+            <h5 class="mb-3"><i class="fas fa-envelope me-2 text-primary"></i>Email</h5>
+            <p><a href="mailto:mepstarinfo@gmail.com" class="text-decoration-none text-dark">mepstarinfo@gmail.com</a></p>
+  
+            <h5 class="mb-3"><i class="fas fa-phone me-2 text-success"></i>Phone</h5>
+            <p><class="text-decoration-none text-dark>+91 9769960626</p>
+  
+            <h5 class="mb-3"><i class="fas fa-globe me-2 text-warning"></i>Website</h5>
+            <p><a href="https://yourcompany.com" class="text-decoration-none text-dark" target="_blank">www.yourcompany.com</a></p>
+  
+            <h5 class="mb-3"><i class="fas fa-map-marker-alt me-2 text-danger"></i>Address</h5>
+            <p> 166, Ali Sharmik Nagar, Nehru Nagar, Behind Bldg. No. 6 Kurla (E), Mumbai 400 024 </p>
+  
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+  
+  <footer class="bg-dark text-white text-center py-3">
+    <div class="container">
+      <p>&copy; 2025 MEP Star. All rights reserved.</p>
+    </div>
+  </footer>
+  
+<!-- Bootstrap 5 JS Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+
+</script>
+
+</script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MEP Star - Introduction</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      background: linear-gradient(135deg, #f0f8ff, #e6f7ff);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #0c2e4d;
+      animation: fadeIn 2s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .intro-box {
+      background: white;
+      padding: 2.5rem;
+      border-radius: 1.5rem;
+      box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+      animation: floatIn 1.5s ease-in-out;
+    }
+
+    @keyframes floatIn {
+      0% { transform: translateY(40px); opacity: 0; }
+      100% { transform: translateY(0); opacity: 1; }
+    }
+
+    h1 {
+      color: #0072b1;
+      font-weight: 700;
+      animation: slideIn 1s ease-in-out;
+    }
+
+    @keyframes slideIn {
+      from { transform: translateX(-50px); opacity: 0; }
+      to { transform: translateX(0); opacity: 1; }
+    }
+
+    .highlight {
+      color: #0072b1;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <div class="container py-5">
+    <div class="intro-box">
+      <h1 class="mb-4">Introduction</h1>
+      <p>We were incorporated in the year <span class="highlight">2016</span> by the name of <strong>M/s Cool Channel</strong> primarily serving our Clients in the field of <strong>HVAC</strong>. As we progressed gaining trust and loyalty, our Clients granted us opportunities to expand into the broad-spectrum <strong>MEP field</strong> of works. To cater this need, we started <strong>MEP Star</strong>.</p>
+      <p><strong>MEP Star</strong> is an <span class="highlight">Electro-Mechanical</span> service and solutions provider. We specialize in <strong>HVAC, PHE, Fire Fighting, Electrical, ELV, MEP Service, Maintenance, AMC’s, Testing, Balancing & Commissioning</strong> of all MEP services.</p>
+      <p class="fs-5 fw-bold text-center mt-4">“MEP Star is a one stop shop for all your MEP needs”</p>
+      <p>We undertake <strong>MEP sub-contracts</strong> and have a talented young team of Engineers, Supervisors and Technicians for all MEP trades. Besides direct orders from Developers, we also provide <span class="highlight">technical and manpower services</span> to large MEP contractors such as <strong>M/s Sterling & Wilson Pvt. Ltd</strong> and <strong>M/s Shinryo Suvidha Engineers India Pvt. Ltd</strong>.</p>
+      <p>Our team is well experienced across projects of <strong>Industrial, Commercial, Hospitality, Pharmacy, Hospital</strong>, and <strong>IT sector</strong>.</p>
+    </div>
+  </div>
+</body>
+</html>
